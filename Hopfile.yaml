@@ -4,6 +4,7 @@ tasks:
       echo "👋 Bienvenue dans Hop!"
       echo "Modifie ce fichier Hopfile pour ajouter tes propres tâches."
   run:
+    comment: "Démarre le projet front-end"
     run: |
       clear
       echo "Démarrage du serveur de développement, pensez a démarrer le backend"
