@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonNavigation from './ButtonNavigation'
-import { faBars, faClock, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClock, faHome, faPerson, faPersonBooth } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -16,7 +16,8 @@ export default function Navigation() {
         <div className='flex gap-2'>
           <ButtonNavigation path={"/"} icon={faHome}>Accueil</ButtonNavigation>
           <ButtonNavigation path={"/projet"} icon={faBars}>Projet</ButtonNavigation>
-          <ButtonNavigation path={"/about"} icon={faClock}>Bientot...</ButtonNavigation>
+          {/*<ButtonNavigation path={"/about"} icon={faClock}>Bientot...</ButtonNavigation>*/}
+          <ButtonNavigation path={"/cv"} icon={faPerson}>Mon CV</ButtonNavigation>
         </div>
 
         {/* Réseaux Sociaux (github, linkdin autre) */}
