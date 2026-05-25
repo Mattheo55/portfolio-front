@@ -1,0 +1,10 @@
+tasks:
+  hello:
+    run: |
+      echo "👋 Bienvenue dans Hop!"
+      echo "Modifie ce fichier Hopfile pour ajouter tes propres tâches."
+  run:
+    run: |
+      clear
+      echo "Démarrage du serveur de développement, pensez a démarrer le backend"
+      npm run dev
