@@ -1,3 +1,5 @@
+import PersonalTimeline from "@/components/PersonalTimeline";
+import { Timeline, TimelineItem } from "@/components/reui/timeline";
 import TechCard from "@/components/TechCard";
 import Image from "next/image";
 
@@ -28,7 +30,6 @@ export default function Home() {
           <TechCard description="Front-end" image="/images/react.png">React, React Native et Next JS</TechCard>
           <TechCard description="Logiciel" image="/images/csharp.png">C#</TechCard>
           <TechCard description="Programmation Logiciel et Système" image="/images/rust.png">Tauri et Rust</TechCard>
-
         </div>
       </div>
 
@@ -39,6 +40,12 @@ export default function Home() {
 
       </div>
       {/* Parcours scolaire */}
+      <div className="mt-20">
+        <h1 className="text-3xl">Parcours scolaire</h1>
+        <div className="flex items-center justify-center mt-10">
+          <PersonalTimeline />
+        </div>
+      </div>
       {/* Parcours Pro */}
     </div>
   );

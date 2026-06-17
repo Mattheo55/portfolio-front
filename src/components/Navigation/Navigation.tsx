@@ -6,13 +6,13 @@ import { faBars, faHome, faPerson } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { twMerge } from 'tailwind-merge'
+import { Badge } from '../ui/badge'
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // On déclenche un peu plus bas pour éviter les clignotements tout en haut
       setIsScrolled(window.scrollY > 20);
     }
 
@@ -31,8 +31,9 @@ export default function Navigation() {
         )}
       >
           {/* Nom Prénom */}
-          <div>
+          <div className='flex flex-rox items-center gap-2'>
               <p className='font-bold text-lg select-none whitespace-nowrap'>Matthéo Bigorgne</p>
+              <Badge>DEV</Badge>
           </div>
 
           {/* Navigation */}
