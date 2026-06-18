@@ -9,7 +9,7 @@ interface TechCardProps {
 
 export default function TechCard({children, description, image}: TechCardProps) {
   return (
-    <div className='rounded-lg w-40 border p-2 flex flex-col items-center gap-5 cursor-pointer border-gray-400 hover:-translate-y-2 transition-all'>
+    <div className='rounded-lg w-40 h-60 border p-2 flex flex-col items-center gap-5 cursor-pointer border-gray-400 hover:-translate-y-2 transition-all'>
         <Image
             src={image}
             alt={children?.toString()!}
