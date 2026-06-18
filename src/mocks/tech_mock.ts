@@ -1,6 +1,25 @@
-export const techMock = [
-    {
-        id: "React",
-        content: "J'ai découvert React dans ma quête des techno front-end, aujourd'hui je l'utise avec le framwork NextJS qui permet de faire des sites web performant (Comme se portfolio)"
-    }
-]
+import { Tech } from "@/type/tech"
+
+export const react: Tech = {
+    id: 0,
+    name: "React"
+}
+export const php: Tech = {
+    id: 1,
+    name: "PHP"
+}
+
+export const typescript: Tech = {
+    id: 2,
+    name: "TypeScript"
+}
+
+export const dart: Tech = {
+    id: 3,
+    name: "Dart"
+}
+
+export const csharp: Tech = {
+    id: 4,
+    name: "C#"
+}

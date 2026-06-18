@@ -3,7 +3,7 @@ tasks:
     run: |
       echo "👋 Bienvenue dans Hop!"
       echo "Modifie ce fichier Hopfile pour ajouter tes propres tâches."
-  run:
+  dev:
     comment: "Démarre le projet front-end"
     run: |
       clear
